@@ -9,7 +9,7 @@
         state: present
     - name: create user
       user:
-        name: sadashiva
+        name: sada
         group: admins
         loop:
           - {name: 'sadashiva',group: 'root' }
