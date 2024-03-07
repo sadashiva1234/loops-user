@@ -9,8 +9,12 @@
         state: present
     - name: create user
       user:
-        name: sadashiva
+        name: sada
         group: admins
+<<<<<<< HEAD
         loop:
           - {name: 'sadashiva',group: 'root' }
           - { name: 'swapna',group: 'admins'}
+=======
+        
+>>>>>>> dcdc1dd7dc0efbc6f048a71f69b2f5a510de44e7
