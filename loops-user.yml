@@ -9,8 +9,8 @@
         state: present
     - name: create user
       user:
-        name: sada
-        group: admins
+        name: "{{item.name}}"
+        group: "{{item.group}}"
 <<<<<<< HEAD
         loop:
           - {name: 'sadashiva',group: 'root' }
