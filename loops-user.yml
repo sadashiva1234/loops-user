@@ -1,0 +1,14 @@
+- name: loops user and group
+  hosts: webservers
+  become: True
+  become_user: ubuntu
+  tasks:
+    - name: create group
+      group:
+        name: admins
+        state: present
+    - name: create user
+      user:
+        name: sadashiva
+        group: admins
+        
