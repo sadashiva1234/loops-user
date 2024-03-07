@@ -11,4 +11,6 @@
       user:
         name: sadashiva
         group: admins
-        
+        loop:
+          - {name: 'sadashiva',group: 'root' }
+          - { name: 'swapna',group: 'admins'}
